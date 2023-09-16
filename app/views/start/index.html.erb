@@ -1,0 +1,35 @@
+<h1>Запускаем создание тестовых данных</h1>
+<p>
+  @temp = <%= @temp %>
+  <br>
+<%= @temp1 %>
+  <br>
+<%= @temp2.each do |tovar| %>
+  Tovar ID: <%= tovar.id %><br>
+  Tovar Name: <%= tovar.name %><br>
+    <% if tovar.org.nil? %>
+      "Organization: No org found"
+    <% else %>
+      Organization ID: <%=tovar.org.id %><br>
+      Organization Name: <%=tovar.org.name %><br>
+    <% end %>
+  <% end %>
+  <br>  <br>
+<%= @temp3 %>
+  <br>  <br>
+
+ <%  @tovars.each do |tovar| %>
+  Tovar ID: <%= tovar.id %><br>
+  Tovar Name: <%= tovar.name %><br>
+
+  <% if tovar.org.nil? %>
+   "Organization: No org found"
+    <% else %>
+  Organization ID: <%=tovar.org.id %><br>
+  Organization Name: <%=tovar.org.name %><br>
+    <% end %>
+
+  -----------------------
+<%  end  %>
+
+</p>

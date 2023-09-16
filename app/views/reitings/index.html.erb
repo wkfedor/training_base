@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Reitings</h1>
+
+<div id="reitings">
+  <% @reitings.each do |reiting| %>
+    <%= render reiting %>
+    <p>
+      <%= link_to "Show this reiting", reiting %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New reiting", new_reiting_path %>

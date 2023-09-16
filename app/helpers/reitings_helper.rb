@@ -1,0 +1,2 @@
+module ReitingsHelper
+end

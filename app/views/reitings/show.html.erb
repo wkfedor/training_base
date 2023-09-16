@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @reiting %>
+
+<div>
+  <%= link_to "Edit this reiting", edit_reiting_path(@reiting) %> |
+  <%= link_to "Back to reitings", reitings_path %>
+
+  <%= button_to "Destroy this reiting", @reiting, method: :delete %>
+</div>
